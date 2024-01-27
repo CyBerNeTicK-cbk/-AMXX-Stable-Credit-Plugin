@@ -1,0 +1,1 @@
+# -AMXX-Stable-Credit-Plugin
