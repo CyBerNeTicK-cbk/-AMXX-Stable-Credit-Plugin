@@ -24,7 +24,6 @@
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Special thanks to: *
-* - Askhanar [Ulquiorra] > Register Natives
 * - Kidd0x - Indrumare salve pe Nvault si citarea flag-urilor.
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *
