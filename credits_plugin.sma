@@ -234,18 +234,10 @@ public plugin_natives()
 	register_native("set_user_credits", "_NativeSetUserCredits", 1)
 	register_native("get_user_credits", "_NativeGetUserCredits", 1)
 }
+public _NativeSetUserCredits(player, credits){ g_iCredits[player] = credits; _SaveCredits(player);}
+public _NativeGetUserCredits(player, credits){ return g_iCredits[player];}
 
-
-public _NativeSetUserCredits(Client, two)
-{
-	new player = get_param(1)
-	
-	g_iCredits[player] = max(0, get_param(2)); _SaveCredits(player)
-	
-	return g_iCredits[player]
-}
-public _NativeGetUserCredits(Client, two) return g_iCredits[get_param(1)]
-
+public client_putinserver(player) _LoadCredits(player)
 
 public client_disconnected(player)
 {
